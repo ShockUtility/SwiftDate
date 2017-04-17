@@ -217,7 +217,7 @@ public class DateInRegionFormatter {
 			}
 			
 			if cmp.day != 0 || !hasLowerAllowedComponents(than: .day) {
-				if cmp.hour == nil {
+                if cmp.day! > 0 {
 					// case 1: > 0 days difference
 					// case 2: same day difference and no lower time components to print (-> today)
 					let colloquial_time = try self.colloquial_time(forUnit: .day, withValue: cmp.day!, date: fDate)
