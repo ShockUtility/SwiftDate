@@ -250,13 +250,8 @@ public class DateInRegionFormatter {
 		}
 		
 		if cmp.second != nil && (cmp.second != 0 || cmp.second == 0) { // Seconds difference
-            if self.imminentInterval != nil {
-                let colloquial_date = try self.stringLocalized(identifier: "colloquial_now", arguments: [])
-                return (colloquial_date,nil)
-            }
-            // otherwise fallback to difference
-            let colloquial_date = try self.localized(unit: .second, withValue: cmp.second!, asFuture: isFuture, args: abs(cmp.second!))
-			return (colloquial_date,nil)
+            let colloquial_date = try self.stringLocalized(identifier: "colloquial_now", arguments: [])
+            return (colloquial_date,nil)
 		}
 		
 		throw DateError.FailedToCalculate

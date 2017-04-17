@@ -29,11 +29,6 @@
 "colloquial_p_M"					=	"일분 전";     // minute,past,singular:	"one minute ago"
 "colloquial_p_MM"					=	"%d분 전";    // minute,past,plural:		"3 minutes ago"
 
-"colloquial_f_s"					=	"일초 후";	    // minute,future,singular:	"in one minute"
-"colloquial_f_ss"					=	"%d초 후";   // minute,future,plural:	"in 3 minutes"
-"colloquial_p_s"					=	"일초 전";     // minute,past,singular:	"one minute ago"
-"colloquial_p_ss"					=	"%d초 전";    // minute,past,plural:		"3 minutes ago"
-
 "colloquial_now"					=	"지금";       // less than 5 minutes if .allowsNowOnColloquial is set
 
 "colloquial_n_0y"					=	"올해";			// this year
